@@ -1,0 +1,33 @@
+.banner{
+    height: 100vh;
+    background-image: url('../../public/images/banner.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__shadow{
+    height: 100vh;
+    background-color: black;
+    margin-top: -100vh;
+    opacity: 0.4;
+}
+
+.banner__title{
+    color: white;
+    font-size: 28px;
+    z-index: 1000;
+}
+
+.banner__subtitle{
+    color: white;
+    font-size: 26px;
+    z-index: 1000;
+    margin-top: 15px;
+}

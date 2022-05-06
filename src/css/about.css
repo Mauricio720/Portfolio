@@ -1,0 +1,62 @@
+.about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 850px;
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+.about__container{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    margin-top: 35px;
+}
+
+.about__slot{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.my_picure{
+    max-width: 450px;
+    border-radius: 250px;
+}
+
+.my_picure img{
+    border-radius: 250px;
+}
+
+.about__slot__description{
+    font-size: 20px;
+    flex: 2;
+    padding: 25px;
+    padding-right: 105px;
+    color: #033a4b;
+    display: flex;
+    flex-direction: column;
+}
+
+.tecnology__container{
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.tecnology__item{
+    display: flex;
+    flex-grow: 1 ;
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    align-items: center;
+    box-shadow: 1px 1px 5px #ccc;
+    border-radius: 10px;
+}
+
+.tecnology__description{
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+}
