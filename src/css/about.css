@@ -10,7 +10,6 @@
     width: 100%;
     max-width: 1000px;
     display: flex;
-    margin-top: 35px;
 }
 
 .about__slot{
@@ -29,7 +28,7 @@
 }
 
 .about__slot__description{
-    font-size: 20px;
+    font-size: 18px;
     flex: 2;
     padding: 25px;
     padding-right: 105px;
@@ -38,15 +37,25 @@
     flex-direction: column;
 }
 
+.tecnology__title{
+    margin-top: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px;
+    border-bottom: 1px solid #ccc;
+}
+
 .tecnology__container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 15px;
     flex-wrap: wrap;
+    background-color: #fbfbfb;
 }
 
 .tecnology__item{
     display: flex;
-    flex-grow: 1 ;
     width: 150px;
     height: 40px;
     margin: 10px;

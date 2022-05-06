@@ -48,5 +48,28 @@ a:hover {
     font-size: 30px;
     border-bottom: 3px solid #033a4b;
     color: #033a4b;
-    width: 40%;
+    width: 250px;
+}
+
+.whatsApp{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 10px;
+    bottom: 5px;
+    background-color: green;
+    color: white !important;
+    z-index: 1000;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'ETH';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    border-radius: 30px;
+}
+
+.whatsApp__icon{
+    width: 70%;
 }

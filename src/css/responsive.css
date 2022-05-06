@@ -1,0 +1,26 @@
+@media (max-width:900px){
+    .menu__mobile{
+        display: flex;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .about__container{
+        flex-direction: column-reverse;
+    }
+    
+    .about{
+        height: auto;
+        padding-bottom: 25px;
+    }
+
+    .about__slot__description{
+        padding-right: 0px;
+    }
+
+    .portfolio__container{
+        flex-direction: column;
+    }
+}
