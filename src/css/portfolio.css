@@ -19,7 +19,7 @@
 .portfolio__card{
     display: block;
     width: 300px;
-    height: 365px;
+    height: 400px;
     margin: 10px;
     border: 1px solid #ccc;
     box-shadow: 2px 1px 5px #ccc;
@@ -39,7 +39,7 @@
 }
 
 .portfolio__img--container{
-    margin-top: 20px;
+    
     width: 100%;
     position: relative;
     overflow-y: hidden;
@@ -90,6 +90,7 @@
     color: rgb(153, 153, 153);
     padding: 2px;
     border-bottom: 1px solid #ccc;
+    margin: 5px;
 }
 
 .portfolioTecnology__container{
@@ -98,6 +99,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
 }
 
 .portfolioTecnology__item{
@@ -116,4 +118,31 @@
     margin-left: 10px;
     font-weight: bold;
     color: rgb(175, 173, 173);
+}
+
+.portfolio__footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.portfolio__footer__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-weight: bold;
+    width: 40%;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 1px 1px 5px #ccc;
+    
+}
+
+
+.portfolio__footer__item span{
+    margin-left: 5px;
+    font-size: 14px;
+    color: #033a4b;
 }

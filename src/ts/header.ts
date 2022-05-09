@@ -1,4 +1,30 @@
 let menus=[...document.querySelectorAll('.menu__item')] as HTMLElement[];
+
+initMenus();
+
+function initMenus(){
+    menus.forEach((menu)=>{
+        menu.addEventListener('click',()=>{
+            selectedMenu(menu);
+        });
+    })
+}
+
+function selectedMenu(menu:HTMLElement) {
+    clearMenuSelected(); 
+    menu.classList.add('menu__selected');
+    let menuDescription=menu.querySelector('li') as HTMLElement;
+    menuDescription.classList.add('menu__selected');
+}
+
+function clearMenuSelected() {
+    menus.forEach((menu)=>{
+        menu.classList.remove('menu__selected');
+        let menuDescription=menu.querySelector('li') as HTMLElement;
+        menuDescription.classList.remove('menu__selected');
+    })   
+}
+
 let menuBtn=document.querySelector('#menu__mobile') as HTMLElement;
 let menuClose=document.querySelector('#closeMenu') as HTMLElement;
 var isOpen:boolean=false;
@@ -31,29 +57,5 @@ function openCloseMenu() {
     }
 }
 
-initMenus();
-
-function initMenus(){
-    menus.forEach((menu)=>{
-        menu.addEventListener('click',()=>{
-            selectedMenu(menu);
-        });
-    })
-}
-
-function selectedMenu(menu:HTMLElement) {
-    clearMenuSelected(); 
-    menu.classList.add('menu__selected');
-    let menuDescription=menu.querySelector('li') as HTMLElement;
-    menuDescription.classList.add('menu__selected');
-}
-
-function clearMenuSelected() {
-    menus.forEach((menu)=>{
-        menu.classList.remove('menu__selected');
-        let menuDescription=menu.querySelector('li') as HTMLElement;
-        menuDescription.classList.remove('menu__selected');
-    })   
-}
 
 

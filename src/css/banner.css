@@ -26,8 +26,10 @@
     font-size: 34px;
     z-index: 1000;
     border-bottom: 1px solid white;
+    padding: 5px;
     padding-left: 25px;
     padding-right: 25px;
+    text-align: center;
 }
 
 .banner__subtitle{
@@ -38,6 +40,9 @@
     z-index: 1000;
     margin-top: 15px;
     border-bottom: 1px solid white;
+    padding: 5px;
     padding-left: 25px;
     padding-right: 25px;
+    text-align: center;
+
 }

@@ -1,5 +1,26 @@
 "use strict";
 let menus = [...document.querySelectorAll('.menu__item')];
+initMenus();
+function initMenus() {
+    menus.forEach((menu) => {
+        menu.addEventListener('click', () => {
+            selectedMenu(menu);
+        });
+    });
+}
+function selectedMenu(menu) {
+    clearMenuSelected();
+    menu.classList.add('menu__selected');
+    let menuDescription = menu.querySelector('li');
+    menuDescription.classList.add('menu__selected');
+}
+function clearMenuSelected() {
+    menus.forEach((menu) => {
+        menu.classList.remove('menu__selected');
+        let menuDescription = menu.querySelector('li');
+        menuDescription.classList.remove('menu__selected');
+    });
+}
 let menuBtn = document.querySelector('#menu__mobile');
 let menuClose = document.querySelector('#closeMenu');
 var isOpen = false;
@@ -25,25 +46,4 @@ function openCloseMenu() {
         }, 500);
         isOpen = false;
     }
-}
-initMenus();
-function initMenus() {
-    menus.forEach((menu) => {
-        menu.addEventListener('click', () => {
-            selectedMenu(menu);
-        });
-    });
-}
-function selectedMenu(menu) {
-    clearMenuSelected();
-    menu.classList.add('menu__selected');
-    let menuDescription = menu.querySelector('li');
-    menuDescription.classList.add('menu__selected');
-}
-function clearMenuSelected() {
-    menus.forEach((menu) => {
-        menu.classList.remove('menu__selected');
-        let menuDescription = menu.querySelector('li');
-        menuDescription.classList.remove('menu__selected');
-    });
 }
