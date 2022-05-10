@@ -21,8 +21,7 @@
 
 .banner__title{
     color: white;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #033a4b; 
+    
     font-size: 34px;
     z-index: 1000;
     border-bottom: 1px solid white;
@@ -34,8 +33,7 @@
 
 .banner__subtitle{
     color: white;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #033a4b; 
+
     font-size: 26px;
     z-index: 1000;
     margin-top: 15px;

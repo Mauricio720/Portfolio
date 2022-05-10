@@ -27,4 +27,9 @@
     .my_picure{
         max-width: 250px;
     }
+
+    .project__info{
+        padding: 0px;
+    } 
+    
 }

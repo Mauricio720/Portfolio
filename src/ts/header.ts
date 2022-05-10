@@ -1,28 +1,41 @@
-let menus=[...document.querySelectorAll('.menu__item')] as HTMLElement[];
+var links=[...document.querySelectorAll('.menu a')] as HTMLElement[];
+var linksMenu=[...document.querySelectorAll('.menuMobile__container a')] as HTMLElement[];
 
-initMenus();
+document.addEventListener('scroll',()=>{
+    scrollMenu();
+})
 
-function initMenus(){
-    menus.forEach((menu)=>{
-        menu.addEventListener('click',()=>{
-            selectedMenu(menu);
-        });
+function scrollMenu(){
+    let scrollY=window.scrollY;
+    
+    links.forEach((link,index)=>{
+        let href=link.getAttribute('href') as string;
+        let linkMenu=document.querySelector(href) as HTMLElement;
+        
+        let posSection=linkMenu.offsetTop;
+        let heightSection=linkMenu.offsetHeight;
+        
+        if(posSection <= scrollY && (posSection + heightSection) > scrollY){
+            selectedMenu(link);
+            selectedMenu(linksMenu[index]);
+        }else{
+            removeSelectedMenu(link);
+            removeSelectedMenu(linksMenu[index]);
+        }
     })
 }
 
+function removeSelectedMenu(itemMenu:HTMLElement){
+    itemMenu.classList.remove('menu__selected');
+    let menuDescription=itemMenu.querySelector('li') as HTMLElement;
+    menuDescription.classList.remove('menu__selected');
+
+}
+
 function selectedMenu(menu:HTMLElement) {
-    clearMenuSelected(); 
     menu.classList.add('menu__selected');
     let menuDescription=menu.querySelector('li') as HTMLElement;
     menuDescription.classList.add('menu__selected');
-}
-
-function clearMenuSelected() {
-    menus.forEach((menu)=>{
-        menu.classList.remove('menu__selected');
-        let menuDescription=menu.querySelector('li') as HTMLElement;
-        menuDescription.classList.remove('menu__selected');
-    })   
 }
 
 let menuBtn=document.querySelector('#menu__mobile') as HTMLElement;

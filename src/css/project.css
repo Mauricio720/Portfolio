@@ -23,10 +23,14 @@
     max-width: 1200px;
 }
 
+.description{
+    font-weight: initial
+}
+
 .carrousel__slot{
     flex: 2;
     margin: 15px;
-    box-shadow: 1px 1px 5px #ccc;
+    box-shadow: 1px 1px 10px #ccc;
     border-radius: 15px;
 }
 
@@ -44,13 +48,15 @@
     color: #033a4b;
     font-weight: bold;
     font-size: 18px;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 .tecnologyProject__container{
     width: 100%;
+    display: flex;
     flex-direction: column;
-    box-shadow: 1px 1px 5px #ccc;
+    align-items: center;
+    box-shadow: 1px 1px 10px #ccc;
     border-radius: 15px;
     background-color: white;
     margin-top: 25px;
@@ -62,4 +68,43 @@
 
 #carrouselProject{
     width: 850px;
+}
+
+.container__github{
+    margin-top: 25px;
+    box-shadow: 1px 1px 10px #ccc;
+    border-radius: 15px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.content__github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github__item{
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.github__item span{
+    font-size: 15px;
+}
+
+.prev-carousel-project{
+    left: -10% !important;
+    background-color: black !important;
+}
+
+.next-carousel-project{
+    right: -10% !important;
+    background-color: black !important;
 }

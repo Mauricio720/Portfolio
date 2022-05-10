@@ -3,6 +3,7 @@
     align-items: center;
     flex-direction: column;
     box-shadow: 1px 1px 5px #ccc;
+    padding-bottom: 25px;
 }
 
 .portfolio__container{
@@ -61,17 +62,19 @@
     position: absolute;
     width: 20px;
     height: 20px;
+    line-height: 18px;
     cursor: pointer;
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.4;
+    border-radius: 5px;
 }
 
 .portfolioBtn-prev{
-    left: 0px;
+    left: 2px;
     top: 50%;
 }
 .portfolioBtn-next{
-    right: 0px;
+    right: 2px;
     top: 50%;
 }
 
@@ -105,6 +108,7 @@
     box-shadow: 1px 1px 5px #ccc;
     border-radius: 10px;
     padding: 2px;
+    
 }
 
 .portfolioTecnology__description{
@@ -129,12 +133,16 @@
     font-weight: bold;
     width: 40%;
     text-align: center;
-    padding: 5px;
     box-shadow: 1px 1px 5px #ccc;
 }
 
 .portfolio__footer__item span{
     margin-left: 5px;
     font-size: 14px;
-    color: #ccc;
+    color: #999;
 }
+
+#modalProject{
+    margin-top: 60px;
+}
+
