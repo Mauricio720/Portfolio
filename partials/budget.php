@@ -1,5 +1,5 @@
 <div class="content-budget">
-    <h2 class="budget_title">Fale um pouco sobre seu projeto/ideia</h2>
+    <h2 class="budget_title">Fale comigo sobre seu projeto!</h2>
 
     <form class="form-budget" method="post">
         <div class="form-group m-2">
@@ -52,5 +52,5 @@
         mask: '(00)00000-0000'
     });
 </script>
-<script src="src/js/budget.min.js" type="module"></script>
+<script src="src/js/budget.min.js"></script>
     

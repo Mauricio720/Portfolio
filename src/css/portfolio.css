@@ -8,7 +8,7 @@
 
 .portfolio__container{
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,8 +19,7 @@
 
 .portfolio__card{
     display: block;
-    width: 300px;
-    height: 400px;
+    width: 530px;
     margin: 10px;
     border: 1px solid #ccc;
     box-shadow: 2px 1px 5px #ccc;
@@ -42,8 +41,7 @@
 }
 
 .portfolio__img{
-    width: 295px;
-    height: 150px;
+    width: 530px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     display: flex;
@@ -51,6 +49,10 @@
     align-items: center;
     flex-shrink: 0;
     cursor: pointer;
+}
+
+.portfolio__img:hover{
+    background-color: #ccc;
 }
 
 .portfolio__img img{

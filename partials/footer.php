@@ -8,3 +8,8 @@
         </a>
     </div>
 </footer>
+
+<script>
+    const TARGET_URL="<?php echo $_GET['url'];?>";
+    const BASEAPI="https://painel.mauridesenvolvedor.com/api/";
+</script>

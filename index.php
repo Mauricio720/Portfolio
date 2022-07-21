@@ -55,7 +55,7 @@
     </div>
 
     <section class="portfolio" id="portfolio">
-        <h1 class="title">Portfólio</h1>
+        <h1 class="title">Meu Portfólio</h1>
         <div class="portfolio__container">
             <div class="portfolio__card">
                 <div class="portfolio__img--container">
@@ -94,33 +94,7 @@
                 </div>
 
                 <div class="portfolio__title">Galeria de fotos e CMS</div>
-                <div class="portfolioTecnology__container">
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-HTML" height="20" width="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-                        <div class="portfolioTecnology__description">HTML</div>
-                    </div>
-
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-CSS" height="20" width="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-                        <div class="portfolioTecnology__description">CSS</div>
-                    </div>
-
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-JQuery" height="20" width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg">
-                        <div class="portfolioTecnology__description">JQuery</div>
-                    </div>
-                    
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-Laravel" height="15" width="15" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" />
-                        <div class="portfolioTecnology__description">Laravel</div>
-                    </div>
-
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-PHP" height="25" width="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                        <div class="portfolioTecnology__description">PHP</div>
-                    </div>
-                </div>
-
+                
                 <div class="portfolio__footer">
                     <a href="fotografia" target="_blank" class="portfolio__footer__item">
                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="react-icons" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(156, 152, 166);"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
@@ -159,32 +133,7 @@
                 </div>
 
                 <div class="portfolio__title">Sistema Imobiliaria</div>
-                <div class="portfolioTecnology__container">
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-HTML" height="20" width="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-                        <div class="portfolioTecnology__description">HTML</div>
-                    </div>
-
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-CSS" height="20" width="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-                        <div class="portfolioTecnology__description">CSS</div>
-                    </div>
-
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-JQuery" height="20" width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg">
-                        <div class="portfolioTecnology__description">JQuery</div>
-                    </div>
-                    
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-Laravel" height="15" width="15" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" />
-                        <div class="portfolioTecnology__description">Laravel</div>
-                    </div>
-
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-PHP" height="25" width="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                        <div class="portfolioTecnology__description">PHP</div>
-                    </div>
-                </div>
+              
                 
                 <div class="portfolio__footer">
                     <a href="imobiliaria" target="_blank" class="portfolio__footer__item">
@@ -240,28 +189,7 @@
                 </div>
 
                 <div class="portfolio__title">Sistema de Tarefas</div>
-                <div class="portfolioTecnology__container">
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-React" height="15" width="15" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-                        <div class="portfolioTecnology__description">React</div>
-                    </div>
-                    
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-React" height="15" width="15" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-                        <div class="portfolioTecnology__description">React Native</div>
-                    </div>
-
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-Laravel" height="15" width="15" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" />
-                        <div class="portfolioTecnology__description">Laravel</div>
-                    </div>
-
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-PHP" height="25" width="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                        <div class="portfolioTecnology__description">PHP</div>
-                    </div>
-                </div>
-                
+               
                 <div class="portfolio__footer">
                     <a href="tarefas" target="_blank" class="portfolio__footer__item">
                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="react-icons" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(156, 152, 166);"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
@@ -308,33 +236,7 @@
                 </div>
 
                 <div class="portfolio__title">Endoquiz Api/Painel</div>
-                <div class="portfolioTecnology__container">
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-HTML" height="20" width="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-                        <div class="portfolioTecnology__description">HTML</div>
-                    </div>
-
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-CSS" height="20" width="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-                        <div class="portfolioTecnology__description">CSS</div>
-                    </div>
-
-                    <div class="portfolioTecnology__item">
-                    <img align="center" alt="Mauri-Js" height="20" width="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-                        <div class="portfolioTecnology__description">Javascript</div>
-                    </div>
-                    
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-Laravel" height="15" width="15" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" />
-                        <div class="portfolioTecnology__description">Laravel</div>
-                    </div>
-
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-PHP" height="25" width="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                        <div class="portfolioTecnology__description">PHP</div>
-                    </div>
-                </div>
-                
+               
                 <div class="portfolio__footer">
                     <a href="endoquiz" target="_blank" class="portfolio__footer__item">
                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="react-icons" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(156, 152, 166);"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
@@ -373,13 +275,7 @@
                 </div>
 
                 <div class="portfolio__title">Processo Agil App</div>
-                <div class="portfolioTecnology__container">
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-React" height="15" width="15" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-                        <div class="portfolioTecnology__description">React Native</div>
-                    </div>
-                </div>
-                
+              
                 <div class="portfolio__footer">
                     <a href="processoAgil" target="_blank" class="portfolio__footer__item">
                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="react-icons" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(156, 152, 166);"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
@@ -414,23 +310,7 @@
                 </div>
 
                 <div class="portfolio__title">BM Cereais Site</div>
-                <div class="portfolioTecnology__container">
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-HTML" height="20" width="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-                        <div class="portfolioTecnology__description">HTML</div>
-                    </div>
-
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-CSS" height="20" width="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-                        <div class="portfolioTecnology__description">CSS</div>
-                    </div>
-
-                    <div class="portfolioTecnology__item">
-                        <img align="center" alt="Mauri-Js" height="20" width="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-                        <div class="portfolioTecnology__description">Javascript</div>
-                    </div>
-                </div>
-                
+               
                 <div class="portfolio__footer">
                     <a href="bmcereais" target="_blank" class="portfolio__footer__item">
                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="react-icons" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(156, 152, 166);"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
