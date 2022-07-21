@@ -10,9 +10,12 @@
     "gulp-uglify": "^3.0.2",
     "gulp-uglify-es": "^2.0.0",
     "gulp-uglifycss": "^1.1.0",
-    "gulp-watch": "^5.0.1"
+    "gulp-watch": "^5.0.1",
+    "ts-watch": "^1.0.8"
   },
   "dependencies": {
-    "concurrently": "^7.1.0"
+    "concurrently": "^7.1.0",
+    "imask": "^6.4.2",
+    "sweetalert2": "^11.4.23"
   }
 }

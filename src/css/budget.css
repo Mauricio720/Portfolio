@@ -1,0 +1,37 @@
+.budget_title{
+    color: #033a4b;
+    width: 60%;
+    margin-top: 100px;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 2px solid #033a4b;
+}
+
+.content-budget{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-budget{
+    margin: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.form-budget-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.budget-submit{
+    margin-top: 20px;
+    color: white !important;
+}

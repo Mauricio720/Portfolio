@@ -3,7 +3,19 @@ var linksMenu=[...document.querySelectorAll('.menuMobile__container a')] as HTML
 
 document.addEventListener('scroll',()=>{
     scrollMenu();
-})
+});
+
+
+const addAccess=async (endpoint:string)=>{
+    //@ts-ignore
+    const res=await fetch(BASEAPI+endpoint,{
+        method:'POST',
+});
+    
+    const json= await res.json();
+}
+
+addAccess('add_access',);
 
 function scrollMenu(){
     let scrollY=window.scrollY;

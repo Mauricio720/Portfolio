@@ -46,6 +46,9 @@ cardsPortfolio.forEach((card) => {
             selectedPicture = index;
             let pictures = getPictures(target);
             fillModalPictures(pictures);
+            let projectNameElement = e.currentTarget.closest('.portfolio__card').querySelector('.portfolio__title');
+            let category = e.currentTarget.getAttribute('category');
+            addProjectInterest('add_project', projectNameElement.innerHTML, category);
         });
     });
 });
@@ -90,3 +93,23 @@ function fillModalPictures(pictures) {
         modalCarouselInner.append(pictureClone);
     });
 }
+var seeProjectArray = [];
+const addProjectInterest = async (endpoint, projectName, category) => {
+    let index = seeProjectArray.findIndex((item) => {
+        if (item === projectName) {
+            return true;
+        }
+    });
+    if (index === -1) {
+        let formData = new FormData();
+        formData.append('project_name', projectName);
+        formData.append('category', category);
+        //@ts-ignore
+        const res = await fetch(BASEAPI + endpoint, {
+            method: 'POST',
+            body: formData
+        });
+        const json = await res.json();
+        seeProjectArray.push(projectName);
+    }
+};

@@ -4,6 +4,14 @@ var linksMenu = [...document.querySelectorAll('.menuMobile__container a')];
 document.addEventListener('scroll', () => {
     scrollMenu();
 });
+const addAccess = async (endpoint) => {
+    //@ts-ignore
+    const res = await fetch(BASEAPI + endpoint, {
+        method: 'POST',
+    });
+    const json = await res.json();
+};
+addAccess('add_access');
 function scrollMenu() {
     let scrollY = window.scrollY;
     links.forEach((link, index) => {

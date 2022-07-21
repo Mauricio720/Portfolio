@@ -48,13 +48,16 @@ cardsPortfolio.forEach((card)=>{
     let subcontainer=card.querySelector('.portfolio__img--subcontainer') as HTMLElement;
     let portfolioImg=[...subcontainer.querySelectorAll('.portfolio__img')]
     portfolioImg.forEach((picture,index)=>{
-        picture.addEventListener('click',(e)=>{
+        picture.addEventListener('click',(e:any)=>{
             let pictureElement=e.currentTarget as HTMLElement;
             let target:string=pictureElement.getAttribute('target') as string;
             selectedTarget=target;
             selectedPicture=index;
             let pictures=getPictures(target);
             fillModalPictures(pictures);
+            let projectNameElement=e.currentTarget.closest('.portfolio__card').querySelector('.portfolio__title') as HTMLElement;
+            let category=e.currentTarget.getAttribute('category') as string;
+            addProjectInterest('add_project',projectNameElement.innerHTML,category);
         })
     })
 });
@@ -101,4 +104,29 @@ function fillModalPictures(pictures:Pictures[]){
         pictureCloneImg.setAttribute('src',picture.src);
         modalCarouselInner.append(pictureClone);
     })
+}
+
+var seeProjectArray : string[]=[];
+
+const addProjectInterest=async (endpoint:string,projectName:string,category:string)=>{
+    let index=seeProjectArray.findIndex((item)=>{
+        if(item===projectName){
+            return true;
+        }
+    })
+    
+    if(index === -1){
+        let formData=new FormData();
+        formData.append('project_name',projectName);
+        formData.append('category',category);
+        //@ts-ignore
+        const res=await fetch(BASEAPI+endpoint,{
+            method:'POST',
+            body:formData        
+        });
+        
+        const json= await res.json();
+        seeProjectArray.push(projectName);
+    }
+   
 }

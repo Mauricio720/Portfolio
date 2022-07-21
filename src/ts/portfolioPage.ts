@@ -4,6 +4,21 @@ var carouselInner=document.querySelector('.carousel-inner') as HTMLElement;
 
 init();
 
+const addProjectInterestInPage=async (endpoint:string,projectName:string,category:string)=>{
+    let formData=new FormData();
+    formData.append('project_name',projectName);
+    formData.append('category',category);
+    //@ts-ignore
+    const res=await fetch(BASEAPI+endpoint,{
+        method:'POST',
+        body:formData        
+    });
+    
+    const json= await res.json();
+}
+
+addProjectInterestInPage('add_project',portfolioArray.projectName,portfolioArray.category);
+
 function init(){
     setTitle(); 
     setPicturesInCarrousel();
@@ -14,6 +29,7 @@ function init(){
 
 function setPorfolioArray(){
     let index=data.findIndex((item)=>{
+        //@ts-ignore
         if(item.target===TARGET_URL){
             return true;
         }
