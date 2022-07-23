@@ -7,6 +7,15 @@ const addContact=async (endpoint:string,body:FormData)=>{
     });
     
     const json= await res.json();
+    if(json.error===""){
+        let alert=document.querySelector('.alert-success') as HTMLElement;
+        alert.classList.remove('d-none');
+        clearInputsForm();
+    }else{
+        let alert=document.querySelector('.alert-danger') as HTMLElement;
+        alert.classList.remove('d-none');
+        alert.innerHTML=json.error;
+    }
 }
 
 let submitBtn=document.querySelector('#submit-btn') as HTMLInputElement;
@@ -16,10 +25,8 @@ submitBtn.addEventListener('click',(event)=>{
     let formBudget=document.querySelector('.form-budget') as HTMLFormElement;
     let formData=new FormData(formBudget);
 
-    //addContact('add_client',formData);
-    let alert=document.querySelector('.alert') as HTMLElement;
-    alert.classList.remove('d-none');
-    clearInputsForm();
+    addContact('add_client',formData);
+    
 })
 
 function clearInputsForm(){

@@ -36,7 +36,7 @@
 
 .portfolio__img--subcontainer{
     display: flex;
-    transition: all .5s linear;
+    transition: all .9s linear;
     overflow: hidden;
 }
 
@@ -51,8 +51,8 @@
     cursor: pointer;
 }
 
-.portfolio__img:hover{
-    background-color: #ccc;
+.portfolio__img:hover {
+    background-color: rgb(241, 241, 241);
 }
 
 .portfolio__img img{

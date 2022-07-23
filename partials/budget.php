@@ -37,6 +37,8 @@
             <input class="btn btn-info w-50 budget-submit" id="submit-btn" type="submit" value="Enviar">
         </div>
         
+        <div class="alert alert-danger alert-dismissible fade show mt-4 d-none" role="alert">
+        </div>
         <div class="alert alert-success alert-dismissible fade show mt-4 d-none" role="alert">
             Obrigado pelo interesse! Entraremos em contato em breve!
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -44,7 +46,6 @@
     </form>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/imask"></script>
 <script>
     var phoneMask = IMask(
@@ -52,5 +53,4 @@
         mask: '(00)00000-0000'
     });
 </script>
-<script src="src/js/budget.min.js"></script>
     

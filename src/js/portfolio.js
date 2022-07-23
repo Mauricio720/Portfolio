@@ -1,5 +1,13 @@
 "use strict";
 let cardsPortfolio = [...document.querySelectorAll('.portfolio__card')];
+var resize = false;
+window.addEventListener('resize', (e) => {
+    let widthWindow = window.innerWidth;
+    if (widthWindow < 900) {
+        resize = true;
+        resetCarrousel();
+    }
+});
 initPortfolio();
 function initPortfolio() {
     cardsPortfolio.forEach((card) => {
@@ -11,6 +19,59 @@ function initPortfolio() {
         portfolioBtnNext.addEventListener('click', () => {
             nextBtnAction(card);
         });
+        moveCarrouselAutomatic(card);
+    });
+}
+function moveCarrouselAutomatic(card) {
+    let portfolioBtnPrev = card.querySelector('.portfolioBtn-prev');
+    let portfolioBtnNext = card.querySelector('.portfolioBtn-next');
+    let totalImages = card.querySelectorAll('.portfolio__img').length;
+    let pictureNow = 1;
+    let isBack = false;
+    setInterval(() => {
+        if (verifyResize()) {
+            pictureNow = 1;
+            isBack = false;
+            resize = false;
+        }
+        else {
+            if (verifyAutomaticCarrousel(pictureNow, isBack, totalImages)) {
+                portfolioBtnNext.click();
+                pictureNow++;
+            }
+            else {
+                isBack = true;
+                portfolioBtnPrev.click();
+                pictureNow--;
+                if (pictureNow === 1) {
+                    isBack = false;
+                }
+            }
+        }
+    }, 6000);
+}
+function verifyResize() {
+    if (resize) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+function verifyAutomaticCarrousel(pictureNow, isBack, totalImages) {
+    if (pictureNow < totalImages && isBack === false) {
+        return true;
+    }
+    else {
+        if (pictureNow === 1) {
+            return false;
+        }
+    }
+}
+function resetCarrousel() {
+    let subcontainers = [...document.querySelectorAll('.portfolio__img--subcontainer')];
+    subcontainers.forEach((item) => {
+        item.style.marginLeft = "0px";
     });
 }
 function prevBtnAction(card) {

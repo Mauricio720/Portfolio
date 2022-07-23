@@ -6,16 +6,23 @@ const addContact = async (endpoint, body) => {
         body
     });
     const json = await res.json();
+    if (json.error === "") {
+        let alert = document.querySelector('.alert-success');
+        alert.classList.remove('d-none');
+        clearInputsForm();
+    }
+    else {
+        let alert = document.querySelector('.alert-danger');
+        alert.classList.remove('d-none');
+        alert.innerHTML = json.error;
+    }
 };
 let submitBtn = document.querySelector('#submit-btn');
 submitBtn.addEventListener('click', (event) => {
     event.preventDefault();
     let formBudget = document.querySelector('.form-budget');
     let formData = new FormData(formBudget);
-    //addContact('add_client',formData);
-    let alert = document.querySelector('.alert');
-    alert.classList.remove('d-none');
-    clearInputsForm();
+    addContact('add_client', formData);
 });
 function clearInputsForm() {
     let formBudget = document.querySelector('.form-budget');

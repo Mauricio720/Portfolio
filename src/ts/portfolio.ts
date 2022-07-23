@@ -1,4 +1,13 @@
 let cardsPortfolio=[...document.querySelectorAll('.portfolio__card')] as HTMLElement[];
+var resize=false;
+
+window.addEventListener('resize', (e) => {
+    let widthWindow=window.innerWidth;
+    if(widthWindow < 900){
+        resize=true;
+        resetCarrousel();
+    }
+});
 
 initPortfolio();
 
@@ -14,8 +23,66 @@ function initPortfolio(){
         portfolioBtnNext.addEventListener('click',()=>{
             nextBtnAction(card);
         });
+
+        moveCarrouselAutomatic(card);
     })
 }
+
+function moveCarrouselAutomatic(card:HTMLElement){
+    let portfolioBtnPrev=card.querySelector('.portfolioBtn-prev') as HTMLElement;
+    let portfolioBtnNext=card.querySelector('.portfolioBtn-next') as HTMLElement;
+    let totalImages:number=card.querySelectorAll('.portfolio__img').length;
+    let pictureNow=1;
+    let isBack=false;
+
+    setInterval(()=>{
+        if(verifyResize()){
+            pictureNow=1;
+            isBack=false;
+            resize=false;
+        }else{
+            if(verifyAutomaticCarrousel(pictureNow,isBack,totalImages)){
+                portfolioBtnNext.click();
+                pictureNow++;
+            }else{
+                isBack=true;
+                portfolioBtnPrev.click();
+                pictureNow--;
+
+                if(pictureNow === 1){
+                    isBack=false;
+                }
+            }
+        }
+    },6000);
+}
+
+function verifyResize(){
+    if(resize){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function verifyAutomaticCarrousel(pictureNow:number,isBack:boolean,totalImages:number){
+    if(pictureNow<totalImages && isBack===false){
+        return true;
+    }else{
+       if(pictureNow===1){
+            return false;
+        }
+    }
+}
+
+function resetCarrousel(){
+    let subcontainers=[...document.querySelectorAll('.portfolio__img--subcontainer')] as HTMLElement[];
+    
+    subcontainers.forEach((item)=>{
+        item.style.marginLeft="0px";
+    })
+}
+
 
 function prevBtnAction(card:HTMLElement){
     let image=card.querySelector('.portfolio__img') as HTMLElement;
@@ -47,6 +114,7 @@ var selectedPicture : number=0;
 cardsPortfolio.forEach((card)=>{
     let subcontainer=card.querySelector('.portfolio__img--subcontainer') as HTMLElement;
     let portfolioImg=[...subcontainer.querySelectorAll('.portfolio__img')]
+    
     portfolioImg.forEach((picture,index)=>{
         picture.addEventListener('click',(e:any)=>{
             let pictureElement=e.currentTarget as HTMLElement;

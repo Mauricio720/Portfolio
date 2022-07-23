@@ -32,4 +32,32 @@
         padding: 0px;
     } 
     
+    .form-budget{
+        width: 90%;
+    }
+
+    .portfolio__card{
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .portfolio__img{
+        width:100vw;
+    }
+
+    .portfolio__title{
+        font-size: 16px;
+    }
+
+    .portfolio__footer__item span{
+        font-size: 14px;
+    }
+
+    .modal-dialog {
+        max-width: 880px !important;
+    }
+
+    .title,.budget_title{
+        width: 85% !important;
+    }
 }
